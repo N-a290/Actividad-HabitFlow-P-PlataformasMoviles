@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/habit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HabitActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/primary"
+        android:backgroundTint="@color/primary"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@color/primary"
+            android:text="Crear hábito"
+            android:textAlignment="center"
+            android:textColor="@color/neutrallight"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/Theme.HabitsTrackerApp.HabitActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="¿Qué habito deseas crear?"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputName"
+                    style="@style/Theme.HabitsTrackerApp.HabitActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nombre del hábito" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/Theme.HabitsTrackerApp.HabitActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Categoría:"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                style="@style/Theme.HabitsTrackerApp.HabitActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Salud" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                style="@style/Theme.HabitsTrackerApp.HabitActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estudio" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                style="@style/Theme.HabitsTrackerApp.HabitActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Productividad" />
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/Theme.HabitsTrackerApp.HabitActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Frecuencia:"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioButtonDaily"
+                    style="@style/Theme.HabitsTrackerApp.HabitActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Diario" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonWeekly"
+                    style="@style/Theme.HabitsTrackerApp.HabitActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Semanal" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/Theme.HabitsTrackerApp.HabitActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descripción:"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputDescription"
+                    style="@style/Theme.HabitsTrackerApp.HabitActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Añade una breve descripción..." />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/buttonCreateHabit"
+                style="@style/Theme.HabitsTrackerApp.HabitActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Crear"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:icon="@drawable/arrow_right_svgrepo_com__1_"
+                app:iconGravity="end" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
